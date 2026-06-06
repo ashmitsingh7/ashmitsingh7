@@ -12,7 +12,6 @@ Building real-time hardware systems from low-level firmware to robotics and digi
 - Gesture-controlled robotic arm
 - PID hardware accelerator in Verilog
 - Intel RealSense D455 DWS pipeline
-- RISC-V SoC experimentation
 - Encoder-based closed-loop motor control
 
 ---
