@@ -1,17 +1,8 @@
 <div align="center">
 
-```
-ashmit@robotics:~$ whoami
+<img src="assets/banner.svg" alt="Ashmit Singh — robotics engineer" width="100%"/>
 
-Ashmit Singh
-Electronics Engineering · VIT Vellore
-
-Building robots and embedded systems —
-still figuring out how deep the rabbit hole goes.
-
-I like projects where hardware, software
-and physics all have to agree.
-```
+<br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ashmitsingh7-0a66c2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/ashmitsingh7)
 [![Email](https://img.shields.io/badge/Email-ashmitsingh719@gmail.com-333?style=flat&logo=gmail&logoColor=white)](mailto:ashmitsingh719@gmail.com)
@@ -38,31 +29,7 @@ I care about building **complete systems**, not just isolated scripts. Sensors, 
 
 A production warehouse perception pipeline for automatic parcel processing. The goal: scan a parcel, capture its depth image, measure dimensions, read the barcode, log the weight — all without human input. Harder in practice than it sounds on paper.
 
-**Processing pipeline:**
-
-```
-Parcel placed on scale
-  ↓
-Scale stability detection
-  ↓
-RGB + Depth capture  ←  Intel RealSense D455
-  ↓
-Point cloud generation
-  ↓
-Ground plane removal
-  ↓
-Parcel segmentation   ←  tried ML-assisted segmentation here;
-  ↓                       ended up using geometry-first with a
-Dimension extraction      learned fallback for messy clouds
-  ↓
-  ├── Barcode acquisition
-  ├── Weight logging
-  └── Image snapshots
-  ↓
-SQLite + FastAPI
-  ↓
-Web dashboard / HMI
-```
+<img src="assets/dws_pipeline.svg" alt="DWS processing pipeline" width="100%"/>
 
 > At one point I tried using an AI-assisted segmentation approach to separate the parcel from the conveyor surface. It helped with messy point clouds but added latency — so I ended up using a hybrid: geometry-first with a learned fallback. Not elegant, but it works in production.
 
@@ -91,15 +58,7 @@ Web dashboard / HMI
 Camera input → MediaPipe hand pose → gesture recognition → TCP → ESP32 → servos. Built this to understand the full perception-to-actuation chain. The latency budget was the interesting part — every layer adds delay and it adds up.
 
 ```
-Camera
-  ↓
-MediaPipe pose estimation
-  ↓
-Gesture classification
-  ↓
-TCP → ESP32
-  ↓
-Servo control
+Camera → MediaPipe → Gesture classification → TCP → ESP32 → Servo control
 ```
 
 `OpenCV` `MediaPipe` `ESP32` `TCP/IP`
@@ -136,26 +95,22 @@ Can you implement a PID controller in hardware and make it genuinely faster than
 ## Where I've Been · Where I'm Going
 
 ```
-2024
-  ✓  Embedded robotics
-  ✓  Competition robotics (Team Vyadh)
-  ✓  Control systems
+2024   ✓  Embedded robotics
+       ✓  Competition robotics (Team Vyadh)
+       ✓  Control systems
 
-2025
-  ✓  Computer vision
-  ✓  ROS2
-  ✓  Industrial automation (DWS internship)
+2025   ✓  Computer vision
+       ✓  ROS2
+       ✓  Industrial automation (DWS internship)
 
-2026 — now
-  ●  FPGA accelerators
-  ●  RISC-V exploration
-  ●  Deeper into ROS2 ecosystem
+2026   ●  FPGA accelerators
+       ●  RISC-V exploration
+       ●  Deeper into ROS2 ecosystem
 
-Want to get to
-  ○  SLAM
-  ○  Robot navigation
-  ○  Autonomous manipulation
-  ○  Humanoid systems (who knows)
+Soon   ○  SLAM
+       ○  Robot navigation
+       ○  Autonomous manipulation
+       ○  Humanoid systems (who knows)
 ```
 
 ---
