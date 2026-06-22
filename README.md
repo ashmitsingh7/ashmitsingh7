@@ -1,160 +1,339 @@
+<div align="center">
+
 # Ashmit Singh
 
-Electronics Engineering @ VIT Vellore  
-Robotics • Embedded Systems • RTL Design • Control Systems
+### Electronics Engineering @ VIT Vellore
 
-Building real-time hardware systems spanning robotics, embedded firmware, computer vision, and digital hardware design.
+Building robotics, embedded systems, industrial automation and digital hardware.
 
----
-
-## Current Focus
-
-- Robotics systems engineering
-- Embedded control architectures
-- Hardware acceleration for control systems
-- Computer vision driven robotics
-- Industrial automation systems
-- RISC-V and RTL design exploration
+[LinkedIn](https://linkedin.com/in/ashmitsingh7) •
+[Email](mailto:ashmitsingh719@gmail.com)
 
 ---
 
-# Featured Projects
+*"Engineering systems that move from prototype to deployment."*
 
-## Team Vyadh - Robotic Arm
-Competition-oriented robotic arm subsystem archive documenting embedded, mechanical, and control systems developed for Mars rover applications under Team Vyadh, VIT Vellore.
-
-### Highlights
-- High-resolution encoder feedback systems using ESP32
-- Hybrid encoder architectures with AS5600 integration
-- Wrist differential homing mechanisms
-- Competition-deployed mounting infrastructure
-- Embedded subsystem integration and deployment
-
-🔗 Repository:  
-[Team-Vyadh-Robotic-Arm](https://github.com/ashmitsingh7/Team-Vyadh-Robotic-Arm)
+</div>
 
 ---
 
-## Gesture-Controlled Robotic Arm
-Real-time robotic arm control system using MediaPipe hand tracking, OpenCV, ESP32 communication, and embedded multi-servo actuation.
+# About Me
 
-### Highlights
-- Perception-to-actuation pipeline
+I'm an Electronics Engineering undergraduate passionate about building complete engineering systems that combine hardware, embedded software, computer vision and robotics.
+
+Most of my work sits at the intersection of
+
+- Industrial Robotics
+- Embedded Systems
+- Computer Vision
+- Real-Time Software
+- Digital Hardware Design
+- Industrial Automation
+
+Rather than focusing on individual technologies, I'm interested in designing entire systems—from sensors and firmware all the way to user interfaces and deployment.
+
+---
+
+# What I'm Currently Building
+
+## Industrial Dimensioning, Weighing & Scanning System (DWS)
+
+> **Private Internship Project**
+
+During my internship in Automation & Infrastructure, I'm developing a production-oriented warehouse perception pipeline for automatic parcel processing.
+
+The complete system integrates
+
+- Intel RealSense D455 depth cameras
+- Industrial weighing scales
+- Barcode scanners
+- ROS2
+- FastAPI
+- SQLite
+- WebSocket-based HMI
+- Production logging
+- Calibration tools
+
+### Current Processing Pipeline
+
+```text
+Parcel Placed
+      │
+      ▼
+Scale Stability Detection
+      │
+      ▼
+RGB + Depth Capture
+      │
+      ▼
+Point Cloud Generation
+      │
+      ▼
+Ground Plane Removal
+      │
+      ▼
+Parcel Segmentation
+      │
+      ▼
+Dimension Extraction
+      │
+      ▼
+Barcode Acquisition
+      │
+      ▼
+Weight Acquisition
+      │
+      ▼
+Database Storage
+      │
+      ▼
+Dashboard & API
+```
+
+Current engineering work includes
+
+- RealSense depth processing
+- Point cloud filtering
+- Parcel tracking
+- Automatic calibration
+- HMI development
+- ROS2 architecture
+- Database integration
+- Production diagnostics
+- Industrial workflow automation
+
+> Due to company confidentiality, this repository remains private.
+
+---
+
+# Featured Engineering Projects
+
+## Team Vyadh — Mars Rover Robotic Arm
+
+Designed and integrated embedded control systems for a competition-grade 5-DOF robotic manipulator developed for the International Rover Challenge.
+
+Contributions include
+
+- ESP32 embedded controllers
+- High-resolution encoder feedback
+- Differential wrist mechanisms
+- Mechanical-electrical integration
+- Competition deployment
+- System debugging
+
+Repository
+
+https://github.com/ashmitsingh7/Team-Vyadh-Robotic-Arm
+
+---
+
+## Gesture Controlled Robotic Arm
+
+A real-time perception-to-actuation system using computer vision to control a robotic manipulator.
+
+```text
+Camera
+
+↓
+
+MediaPipe
+
+↓
+
+Gesture Recognition
+
+↓
+
+TCP Communication
+
+↓
+
+ESP32
+
+↓
+
+Servo Control
+
+↓
+
+Robotic Arm
+```
+
+Features
+
+- OpenCV
+- MediaPipe
+- ESP32 communication
 - Real-time gesture tracking
-- TCP-based command transmission
-- Embedded robotic arm control
-- Multi-servo coordination
+- Embedded robotic control
 
-🔗 Repository:  
-[robotic-arm-vision-control](https://github.com/ashmitsingh7/robotic-arm-vision-control)
+Repository
+
+https://github.com/ashmitsingh7/robotic-arm-vision-control
 
 ---
 
 ## PID Hardware Accelerator
-RTL-based hardware accelerator exploring low-latency PID computation for embedded control systems and robotics applications.
 
-### Highlights
-- Verilog/SystemVerilog implementation
-- Hardware-assisted control computation
-- Digital control acceleration
-- RTL architecture experimentation
+Exploring hardware acceleration of classical PID controllers using RTL design.
 
-🔗 Repository:  
-[PID_Hardware_Accelerator](https://github.com/ashmitsingh7/PID_Hardware_Accelerator)
+The project investigates whether dedicated hardware can reduce latency for embedded control applications.
 
----
+Implemented using
 
-## Intel RealSense D455 DWS Pipeline
-Depth-camera-based dimensioning and perception pipeline being developed during my Summer Internship in Automation & Infrastructure at Delhivery.
-
-Focused on industrial dimensioning workflows, depth sensing, perception pipelines, and automated package measurement systems using Intel RealSense D455 cameras.
-
-### Highlights
-- RealSense D455 integration
-- Depth-based perception
-- Dimensioning workflows
-- Industrial automation systems
-- ROS2-based experimentation
-
-🔗 Repositories:  
-[realsense_d455_dws](https://github.com/ashmitsingh7/realsense_d455_dws)
-
-[dws_ros2](https://github.com/ashmitsingh7/dws_ros2)
-
----
-
-# Technical Areas
-
-## Robotics
-- Forward & Inverse Kinematics
-- Differential Actuation Systems
-- Manipulator Systems
-- Robotic Arm Architectures
-- Trajectory Planning
-
-## Embedded Systems
-- ESP32
-- UART / SPI / I2C
-- PWM & Interrupt Systems
-- Encoder Feedback Architectures
-- Embedded Control Systems
-
-## RTL & Digital Design
 - Verilog
 - SystemVerilog
-- RISC-V Exploration
-- Hardware Accelerators
-- FPGA-Oriented Design
+- Quartus
+- ModelSim
 
-## Computer Vision & Automation
-- OpenCV
-- MediaPipe
-- Depth Sensing
-- RealSense D455
-- Industrial Automation Pipelines
+Current focus
+
+- RTL architecture
+- Arithmetic optimization
+- FPGA-oriented design
+- Hardware control pipelines
+
+Repository
+
+https://github.com/ashmitsingh7/PID_Hardware_Accelerator
 
 ---
 
-# Tools & Platforms
+# Engineering Stack
 
-- Fusion360
-- Quartus
-- MATLAB
-- Altium Designer
+## Robotics
+
 - ROS2
+- MoveIt (Learning)
+- Robot Kinematics
+- Manipulator Design
+- Motion Control
+- Embedded Robotics
+
+---
+
+## Embedded Systems
+
+- ESP32
+- STM32
+- UART
+- SPI
+- I²C
+- PWM
+- Interrupt Systems
+- Encoder Feedback
+
+---
+
+## Computer Vision
+
+- OpenCV
+- Intel RealSense
+- MediaPipe
+- Point Cloud Processing
+- Depth Sensing
+- Industrial Perception
+
+---
+
+## Digital Hardware
+
+- Verilog
+- SystemVerilog
+- FPGA Design
+- RTL Architecture
+- Hardware Accelerators
+- RISC-V Exploration
+
+---
+
+## Software
+
+- Python
+- C++
+- FastAPI
+- SQLite
 - Linux
 - Git
 
 ---
 
+## Engineering Tools
+
+- Fusion 360
+- Quartus
+- MATLAB
+- Altium Designer
+- VS Code
+- Ubuntu Linux
+
+---
+
 # Experience
 
-## Senior Core Member — Robotic Arm Domain  
-Team Vyadh, VIT Vellore
+## Automation & Infrastructure Intern
 
-Worked on the development, integration, and deployment of embedded and mechanical subsystems for a competition-oriented multi-DOF robotic manipulator designed for Mars rover applications.
+**Delhivery**
+
+Building an industrial Dimensioning–Weighing–Scanning (DWS) pipeline for warehouse automation using Intel RealSense D455 depth cameras.
+
+Current responsibilities include
+
+- Computer vision
+- ROS2 architecture
+- Calibration software
+- Point cloud processing
+- Database integration
+- Human-machine interfaces
+- Production deployment tools
 
 ---
 
-## Summer Intern — Automation & Infrastructure  
-Delhivery
+## Senior Core Member — Robotic Arm Domain
 
-Working on industrial automation and dimensioning systems involving depth-camera-based perception pipelines using Intel RealSense D455 systems.
+**Team Vyadh**
+
+Worked on the embedded and mechanical subsystems of a competition-grade Mars Rover robotic manipulator.
+
+Responsibilities
+
+- Embedded control systems
+- Sensor integration
+- Mechanical assembly
+- Field testing
+- Competition deployment
 
 ---
 
-# Interests
+# Current Interests
 
-- Robotics Systems Engineering
+- Industrial Robotics
+- Warehouse Automation
+- Autonomous Manipulation
+- Robot Perception
 - Embedded AI
-- Hardware-Software Co-Design
-- Industrial Automation
-- Real-Time Embedded Systems
-- Digital Hardware Acceleration
+- FPGA Acceleration
+- Digital Hardware
+- Real-Time Systems
+- Space Robotics
 
 ---
 
-# Connect
+# Currently Exploring
 
-- LinkedIn: https://www.linkedin.com/in/ashmitsingh7
-- Email: ashmitsingh719@gmail.com
+- SLAM
+- CUDA for Computer Vision
+- Motion Planning
+- Model Predictive Control
+- FPGA Robotics
+- RISC-V
+
+---
+
+<div align="center">
+
+### Thanks for visiting.
+
+I enjoy building systems that bridge hardware and software—and I'm always excited to learn from engineers working on robotics, automation and embedded technologies.
+
+</div>
