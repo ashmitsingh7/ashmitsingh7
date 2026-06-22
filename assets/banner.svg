@@ -1,0 +1,30 @@
+<svg width="100%" viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Ashmit Singh — robotics engineer banner</title>
+  <desc>Terminal-style hero banner</desc>
+
+  <rect x="0" y="0" width="680" height="200" rx="10" fill="#0D1117"/>
+
+  <text x="32" y="38" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#3FB950">ashmit@robotics:~$</text>
+  <text x="196" y="38" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#8B949E"> whoami</text>
+  <rect x="196" y="26" width="7" height="14" rx="1" fill="#3FB950" opacity="0.8"/>
+
+  <text x="32" y="72" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="20" font-weight="500" fill="#E6EDF3">Ashmit Singh</text>
+  <text x="32" y="96" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#8B949E">Electronics Engineering · VIT Vellore</text>
+
+  <line x1="32" y1="112" x2="648" y2="112" stroke="#21262D" stroke-width="0.5"/>
+
+  <text x="32" y="136" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="13" fill="#E6EDF3">Building robots and embedded systems —</text>
+  <text x="32" y="156" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="13" fill="#8B949E">still figuring out how deep the rabbit hole goes.</text>
+
+  <rect x="32" y="172" width="82" height="18" rx="3" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="73" y="184" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="10" fill="#58A6FF" text-anchor="middle">robotics</text>
+
+  <rect x="122" y="172" width="118" height="18" rx="3" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="181" y="184" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="10" fill="#58A6FF" text-anchor="middle">embedded systems</text>
+
+  <rect x="248" y="172" width="120" height="18" rx="3" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="308" y="184" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="10" fill="#58A6FF" text-anchor="middle">computer vision</text>
+
+  <rect x="376" y="172" width="126" height="18" rx="3" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="439" y="184" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="10" fill="#58A6FF" text-anchor="middle">digital hardware</text>
+</svg>
