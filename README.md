@@ -1,339 +1,184 @@
 <div align="center">
 
-# Ashmit Singh
+```
+ashmit@robotics:~$ whoami
 
-### Electronics Engineering @ VIT Vellore
+Ashmit Singh
+Electronics Engineering · VIT Vellore
 
-Building robotics, embedded systems, industrial automation and digital hardware.
+Building robots and embedded systems —
+still figuring out how deep the rabbit hole goes.
 
-[LinkedIn](https://linkedin.com/in/ashmitsingh7) •
-[Email](mailto:ashmitsingh719@gmail.com)
+I like projects where hardware, software
+and physics all have to agree.
+```
 
----
-
-*"Engineering systems that move from prototype to deployment."*
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ashmitsingh7-0a66c2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/ashmitsingh7)
+[![Email](https://img.shields.io/badge/Email-ashmitsingh719@gmail.com-333?style=flat&logo=gmail&logoColor=white)](mailto:ashmitsingh719@gmail.com)
 
 </div>
 
 ---
 
-# About Me
+## About
 
-I'm an Electronics Engineering undergraduate passionate about building complete engineering systems that combine hardware, embedded software, computer vision and robotics.
+I'm an electronics engineering undergrad at VIT Vellore. Most of my time goes into **robotics, embedded systems and computer vision** — not because I've mastered them, but because they keep surprising me with how much there is left to learn.
 
-Most of my work sits at the intersection of
-
-- Industrial Robotics
-- Embedded Systems
-- Computer Vision
-- Real-Time Software
-- Digital Hardware Design
-- Industrial Automation
-
-Rather than focusing on individual technologies, I'm interested in designing entire systems—from sensors and firmware all the way to user interfaces and deployment.
+I care about building **complete systems**, not just isolated scripts. Sensors, firmware, control, perception, software — I want to understand how each layer connects to the next. I'm somewhere in the middle of that journey.
 
 ---
 
-# What I'm Currently Building
+## Currently Building
 
-## Industrial Dimensioning, Weighing & Scanning System (DWS)
+> 🟢 **ACTIVE · Internship @ Delhivery**
 
-> **Private Internship Project**
+### Industrial Dimensioning, Weighing & Scanning System (DWS)
 
-During my internship in Automation & Infrastructure, I'm developing a production-oriented warehouse perception pipeline for automatic parcel processing.
+`repository private — company confidentiality`
 
-The complete system integrates
+A production warehouse perception pipeline for automatic parcel processing. The goal: scan a parcel, capture its depth image, measure dimensions, read the barcode, log the weight — all without human input. Harder in practice than it sounds on paper.
 
-- Intel RealSense D455 depth cameras
-- Industrial weighing scales
-- Barcode scanners
-- ROS2
-- FastAPI
-- SQLite
-- WebSocket-based HMI
-- Production logging
-- Calibration tools
+**Processing pipeline:**
 
-### Current Processing Pipeline
-
-```text
-Parcel Placed
-      │
-      ▼
-Scale Stability Detection
-      │
-      ▼
-RGB + Depth Capture
-      │
-      ▼
-Point Cloud Generation
-      │
-      ▼
-Ground Plane Removal
-      │
-      ▼
-Parcel Segmentation
-      │
-      ▼
-Dimension Extraction
-      │
-      ▼
-Barcode Acquisition
-      │
-      ▼
-Weight Acquisition
-      │
-      ▼
-Database Storage
-      │
-      ▼
-Dashboard & API
+```
+Parcel placed on scale
+  ↓
+Scale stability detection
+  ↓
+RGB + Depth capture  ←  Intel RealSense D455
+  ↓
+Point cloud generation
+  ↓
+Ground plane removal
+  ↓
+Parcel segmentation   ←  tried ML-assisted segmentation here;
+  ↓                       ended up using geometry-first with a
+Dimension extraction      learned fallback for messy clouds
+  ↓
+  ├── Barcode acquisition
+  ├── Weight logging
+  └── Image snapshots
+  ↓
+SQLite + FastAPI
+  ↓
+Web dashboard / HMI
 ```
 
-Current engineering work includes
+> At one point I tried using an AI-assisted segmentation approach to separate the parcel from the conveyor surface. It helped with messy point clouds but added latency — so I ended up using a hybrid: geometry-first with a learned fallback. Not elegant, but it works in production.
 
-- RealSense depth processing
-- Point cloud filtering
-- Parcel tracking
-- Automatic calibration
-- HMI development
-- ROS2 architecture
-- Database integration
-- Production diagnostics
-- Industrial workflow automation
-
-> Due to company confidentiality, this repository remains private.
+`ROS2` `RealSense D455` `Point Clouds` `FastAPI` `SQLite` `WebSocket HMI` `Python`
 
 ---
 
-# Featured Engineering Projects
+## Projects
 
-## Team Vyadh — Mars Rover Robotic Arm
+### Team Vyadh — Mars Rover Manipulator
 
-Designed and integrated embedded control systems for a competition-grade 5-DOF robotic manipulator developed for the International Rover Challenge.
+`C++` `Embedded` `Competition`
 
-Contributions include
+5-DOF robotic arm built for the International Rover Challenge. I worked on embedded control — ESP32 firmware, encoder feedback loops, the differential wrist mechanism that took the most time to get stable. Learned more from what broke during competition than from what worked.
 
-- ESP32 embedded controllers
-- High-resolution encoder feedback
-- Differential wrist mechanisms
-- Mechanical-electrical integration
-- Competition deployment
-- System debugging
+`ESP32` `Encoder feedback` `Differential wrist` `C++`
 
-Repository
-
-https://github.com/ashmitsingh7/Team-Vyadh-Robotic-Arm
+→ [github.com/ashmitsingh7/Team-Vyadh-Robotic-Arm](https://github.com/ashmitsingh7/Team-Vyadh-Robotic-Arm)
 
 ---
 
-## Gesture Controlled Robotic Arm
+### Gesture Controlled Robotic Arm
 
-A real-time perception-to-actuation system using computer vision to control a robotic manipulator.
+`Python` `CV` `Embedded`
 
-```text
+Camera input → MediaPipe hand pose → gesture recognition → TCP → ESP32 → servos. Built this to understand the full perception-to-actuation chain. The latency budget was the interesting part — every layer adds delay and it adds up.
+
+```
 Camera
-
-↓
-
-MediaPipe
-
-↓
-
-Gesture Recognition
-
-↓
-
-TCP Communication
-
-↓
-
-ESP32
-
-↓
-
-Servo Control
-
-↓
-
-Robotic Arm
+  ↓
+MediaPipe pose estimation
+  ↓
+Gesture classification
+  ↓
+TCP → ESP32
+  ↓
+Servo control
 ```
 
-Features
+`OpenCV` `MediaPipe` `ESP32` `TCP/IP`
 
-- OpenCV
-- MediaPipe
-- ESP32 communication
-- Real-time gesture tracking
-- Embedded robotic control
-
-Repository
-
-https://github.com/ashmitsingh7/robotic-arm-vision-control
+→ [github.com/ashmitsingh7/robotic-arm-vision-control](https://github.com/ashmitsingh7/robotic-arm-vision-control)
 
 ---
 
-## PID Hardware Accelerator
+### PID Hardware Accelerator
 
-Exploring hardware acceleration of classical PID controllers using RTL design.
+`Verilog` `FPGA` `RTL`
 
-The project investigates whether dedicated hardware can reduce latency for embedded control applications.
+Can you implement a PID controller in hardware and make it genuinely faster than software? Exploring that question in Verilog. Current focus: fixed-point arithmetic, pipeline stages, and getting ModelSim to stop lying to me about timing.
 
-Implemented using
+*Still a work in progress — FPGA implementations tend to surface edge cases you didn't think of.*
 
-- Verilog
-- SystemVerilog
-- Quartus
-- ModelSim
+`Verilog` `SystemVerilog` `Quartus` `ModelSim` `RTL`
 
-Current focus
-
-- RTL architecture
-- Arithmetic optimization
-- FPGA-oriented design
-- Hardware control pipelines
-
-Repository
-
-https://github.com/ashmitsingh7/PID_Hardware_Accelerator
+→ [github.com/ashmitsingh7/PID_Hardware_Accelerator](https://github.com/ashmitsingh7/PID_Hardware_Accelerator)
 
 ---
 
-# Engineering Stack
+## Engineering Domains
 
-## Robotics
-
-- ROS2
-- MoveIt (Learning)
-- Robot Kinematics
-- Manipulator Design
-- Motion Control
-- Embedded Robotics
+| Robotics | Embedded | Vision | Digital HW |
+|---|---|---|---|
+| ROS2 | ESP32 | OpenCV | Verilog |
+| Kinematics | STM32 | RealSense | FPGA design |
+| Manipulators | UART / SPI / I²C | Point clouds | RTL |
+| Motion control | Encoder feedback | MediaPipe | Quartus |
 
 ---
 
-## Embedded Systems
+## Where I've Been · Where I'm Going
 
-- ESP32
-- STM32
-- UART
-- SPI
-- I²C
-- PWM
-- Interrupt Systems
-- Encoder Feedback
+```
+2024
+  ✓  Embedded robotics
+  ✓  Competition robotics (Team Vyadh)
+  ✓  Control systems
 
----
+2025
+  ✓  Computer vision
+  ✓  ROS2
+  ✓  Industrial automation (DWS internship)
 
-## Computer Vision
+2026 — now
+  ●  FPGA accelerators
+  ●  RISC-V exploration
+  ●  Deeper into ROS2 ecosystem
 
-- OpenCV
-- Intel RealSense
-- MediaPipe
-- Point Cloud Processing
-- Depth Sensing
-- Industrial Perception
-
----
-
-## Digital Hardware
-
-- Verilog
-- SystemVerilog
-- FPGA Design
-- RTL Architecture
-- Hardware Accelerators
-- RISC-V Exploration
+Want to get to
+  ○  SLAM
+  ○  Robot navigation
+  ○  Autonomous manipulation
+  ○  Humanoid systems (who knows)
+```
 
 ---
 
-## Software
+## How I Think About Building
 
-- Python
-- C++
-- FastAPI
-- SQLite
-- Linux
-- Git
+```
+01  Build systems, not features.
+    The interesting problems live at the interfaces between layers.
 
----
+02  Hardware failure teaches you things software testing never will.
 
-## Engineering Tools
+03  Understand it before you automate it.
 
-- Fusion 360
-- Quartus
-- MATLAB
-- Altium Designer
-- VS Code
-- Ubuntu Linux
+04  Documentation is part of the build, not an afterthought.
 
----
-
-# Experience
-
-## Automation & Infrastructure Intern
-
-**Delhivery**
-
-Building an industrial Dimensioning–Weighing–Scanning (DWS) pipeline for warehouse automation using Intel RealSense D455 depth cameras.
-
-Current responsibilities include
-
-- Computer vision
-- ROS2 architecture
-- Calibration software
-- Point cloud processing
-- Database integration
-- Human-machine interfaces
-- Production deployment tools
-
----
-
-## Senior Core Member — Robotic Arm Domain
-
-**Team Vyadh**
-
-Worked on the embedded and mechanical subsystems of a competition-grade Mars Rover robotic manipulator.
-
-Responsibilities
-
-- Embedded control systems
-- Sensor integration
-- Mechanical assembly
-- Field testing
-- Competition deployment
-
----
-
-# Current Interests
-
-- Industrial Robotics
-- Warehouse Automation
-- Autonomous Manipulation
-- Robot Perception
-- Embedded AI
-- FPGA Acceleration
-- Digital Hardware
-- Real-Time Systems
-- Space Robotics
-
----
-
-# Currently Exploring
-
-- SLAM
-- CUDA for Computer Vision
-- Motion Planning
-- Model Predictive Control
-- FPGA Robotics
-- RISC-V
+05  There's a lot I don't know yet. That's the point.
+```
 
 ---
 
 <div align="center">
 
-### Thanks for visiting.
-
-I enjoy building systems that bridge hardware and software—and I'm always excited to learn from engineers working on robotics, automation and embedded technologies.
+`ashmitsingh7` · open to interesting problems · learning in public
 
 </div>
