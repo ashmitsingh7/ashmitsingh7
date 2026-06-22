@@ -1,0 +1,104 @@
+<svg width="100%" viewBox="0 0 680 620" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>DWS processing pipeline diagram</title>
+  <desc>Flowchart showing the Industrial Dimensioning Weighing and Scanning system pipeline from parcel placement to dashboard output</desc>
+
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#8B949E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#58A6FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="680" height="620" rx="10" fill="#0D1117"/>
+
+  <!-- title -->
+  <text x="340" y="32" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="11" fill="#8B949E" text-anchor="middle">DWS · processing pipeline</text>
+
+  <!-- STEP helper: each box 200w x 36h, centered at x=340 -->
+  <!-- y positions: 52, 108, 164, 220, 276, 332, 388 then branch -->
+
+  <!-- Box 1: Parcel placed -->
+  <rect x="240" y="52" width="200" height="36" rx="5" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="340" y="74" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#E6EDF3" text-anchor="middle">Parcel placed on scale</text>
+
+  <line x1="340" y1="88" x2="340" y2="106" stroke="#8B949E" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <!-- Box 2 -->
+  <rect x="240" y="108" width="200" height="36" rx="5" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="340" y="130" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#E6EDF3" text-anchor="middle">Scale stability check</text>
+
+  <line x1="340" y1="144" x2="340" y2="162" stroke="#8B949E" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <!-- Box 3: depth capture — highlighted blue -->
+  <rect x="240" y="164" width="200" height="36" rx="5" fill="#0D2340" stroke="#58A6FF" stroke-width="0.5"/>
+  <text x="340" y="182" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#58A6FF" text-anchor="middle">RGB + Depth capture</text>
+  <!-- camera label -->
+  <text x="448" y="186" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="10" fill="#8B949E">RealSense D455</text>
+
+  <line x1="340" y1="200" x2="340" y2="218" stroke="#8B949E" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <!-- Box 4 -->
+  <rect x="240" y="220" width="200" height="36" rx="5" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="340" y="242" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#E6EDF3" text-anchor="middle">Point cloud generation</text>
+
+  <line x1="340" y1="256" x2="340" y2="274" stroke="#8B949E" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <!-- Box 5 -->
+  <rect x="240" y="276" width="200" height="36" rx="5" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="340" y="298" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#E6EDF3" text-anchor="middle">Ground plane removal</text>
+
+  <line x1="340" y1="312" x2="340" y2="330" stroke="#8B949E" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <!-- Box 6: segmentation — AI note -->
+  <rect x="240" y="332" width="200" height="36" rx="5" fill="#1A1A0D" stroke="#856D29" stroke-width="0.5"/>
+  <text x="340" y="354" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#E3B341" text-anchor="middle">Parcel segmentation</text>
+  <!-- AI note to the right -->
+  <line x1="442" y1="350" x2="488" y2="350" stroke="#856D29" stroke-width="0.5" stroke-dasharray="3 2"/>
+  <text x="492" y="346" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="9" fill="#8B949E">AI-assisted fallback</text>
+  <text x="492" y="358" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="9" fill="#8B949E">for messy clouds</text>
+
+  <line x1="340" y1="368" x2="340" y2="386" stroke="#8B949E" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <!-- Box 7 -->
+  <rect x="240" y="388" width="200" height="36" rx="5" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="340" y="410" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#E6EDF3" text-anchor="middle">Dimension extraction</text>
+
+  <!-- Branch lines down and out -->
+  <line x1="340" y1="424" x2="340" y2="444" stroke="#8B949E" stroke-width="0.5"/>
+  <!-- horizontal branch -->
+  <line x1="160" y1="444" x2="520" y2="444" stroke="#8B949E" stroke-width="0.5"/>
+  <!-- three drops -->
+  <line x1="160" y1="444" x2="160" y2="462" stroke="#8B949E" stroke-width="0.5" marker-end="url(#arr)"/>
+  <line x1="340" y1="444" x2="340" y2="462" stroke="#8B949E" stroke-width="0.5" marker-end="url(#arr)"/>
+  <line x1="520" y1="444" x2="520" y2="462" stroke="#8B949E" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <!-- Branch boxes -->
+  <rect x="80" y="462" width="160" height="34" rx="5" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="160" y="483" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="11" fill="#E6EDF3" text-anchor="middle">Barcode scan</text>
+
+  <rect x="260" y="462" width="160" height="34" rx="5" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="340" y="483" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="11" fill="#E6EDF3" text-anchor="middle">Weight log</text>
+
+  <rect x="440" y="462" width="160" height="34" rx="5" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="520" y="483" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="11" fill="#E6EDF3" text-anchor="middle">Snapshots</text>
+
+  <!-- merge back -->
+  <line x1="160" y1="496" x2="160" y2="516" stroke="#8B949E" stroke-width="0.5"/>
+  <line x1="340" y1="496" x2="340" y2="516" stroke="#8B949E" stroke-width="0.5"/>
+  <line x1="520" y1="496" x2="520" y2="516" stroke="#8B949E" stroke-width="0.5"/>
+  <line x1="160" y1="516" x2="520" y2="516" stroke="#8B949E" stroke-width="0.5"/>
+  <line x1="340" y1="516" x2="340" y2="534" stroke="#8B949E" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <!-- Box 8: DB -->
+  <rect x="240" y="536" width="200" height="36" rx="5" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+  <text x="340" y="558" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#E6EDF3" text-anchor="middle">SQLite + FastAPI</text>
+
+  <line x1="340" y1="572" x2="340" y2="590" stroke="#8B949E" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <!-- Box 9: dashboard -->
+  <rect x="240" y="590" width="200" height="22" rx="5" fill="#0D2340" stroke="#58A6FF" stroke-width="0.5"/>
+  <text x="340" y="605" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="11" fill="#58A6FF" text-anchor="middle">Web dashboard / HMI</text>
+</svg>
