@@ -94,23 +94,23 @@ Can you implement a PID controller in hardware and make it genuinely faster than
 
 ## Where I've Been · Where I'm Going
 
-```
-2024   ✓  Embedded robotics
-       ✓  Competition robotics (Team Vyadh)
-       ✓  Control systems
+```text
+2025
+✓ Embedded Robotics
+✓ Competition Robotics (Team Vyadh)
+✓ Control Systems
 
-2025   ✓  Computer vision
-       ✓  ROS2
-       ✓  Industrial automation (DWS internship)
+2026
+✓ Computer Vision
+✓ ROS 2
+✓ Industrial Automation (Delhivery DWS)
+✓ FPGA Accelerators
+✓ RISC-V Exploration
 
-2026   ●  FPGA accelerators
-       ●  RISC-V exploration
-       ●  Deeper into ROS2 ecosystem
-
-Soon   ○  SLAM
-       ○  Robot navigation
-       ○  Autonomous manipulation
-       ○  Humanoid systems (who knows)
+Next
+○ Exploring Robotics Research
+○ VLSI & Hardware Acceleration
+○ Smart Materials & Actuators
 ```
 
 ---
