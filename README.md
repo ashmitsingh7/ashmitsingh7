@@ -1,136 +1,104 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Ashmit Singh — robotics engineer" width="100%"/>
+# Ashmit Singh
 
-<br/>
+**Robotics & Embedded Systems** · Electronics Engineering @ VIT Vellore
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-ashmitsingh7-0a66c2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/ashmitsingh7)
-[![Email](https://img.shields.io/badge/Email-ashmitsingh719@gmail.com-333?style=flat&logo=gmail&logoColor=white)](mailto:ashmitsingh719@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ashmitsingh7-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/ashmitsingh7)
+[![Gmail](https://img.shields.io/badge/Email-ashmitsingh719%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:ashmitsingh719@gmail.com)
+[![GitHub followers](https://img.shields.io/github/followers/ashmitsingh7?style=flat-square&label=Follow&color=181717&logo=github)](https://github.com/ashmitsingh7)
 
 </div>
 
----
+<br/>
 
 ## About
 
-I'm an electronics engineering undergrad at VIT Vellore. Most of my time goes into **robotics, embedded systems and computer vision** — not because I've mastered them, but because they keep surprising me with how much there is left to learn.
+I build robots and the embedded/software stacks underneath them — sensors, firmware, control loops, perception, and the plumbing that connects them. Currently an Electronics Engineering undergrad at VIT Vellore, spending most of my time in **robotics, embedded systems, and computer vision.**
 
-I care about building **complete systems**, not just isolated scripts. Sensors, firmware, control, perception, software — I want to understand how each layer connects to the next. I'm somewhere in the middle of that journey.
+I care more about complete, working systems than isolated demos. If something breaks in the field, I'd rather understand *why* than just patch around it.
 
----
+<br/>
 
 ## Currently Building
 
-> 🟢 **ACTIVE · Internship @ Delhivery**
+**Industrial Dimensioning, Weighing & Scanning (DWS) System** — *Internship @ Delhivery*
+A production warehouse perception pipeline that scans a parcel, captures its depth image, measures dimensions, reads the barcode, and logs the weight — no human input required. Multi-sensor capture stack (Intel RealSense D455, digital scale, barcode scanner) feeding a classical CV measurement pipeline, orchestrated by a finite-state machine, with a local-first data layer and live dashboard.
 
-### Industrial Dimensioning, Weighing & Scanning System (DWS)
+`ROS2-style architecture` `RealSense D455` `RANSAC / PCA` `FastAPI` `SQLite (WAL)` `WebSocket HMI`
 
-`repository private — company confidentiality`
+> Codebase is private under company confidentiality — architecture and role are described here, code isn't shared.
 
-A production warehouse perception pipeline for automatic parcel processing. The goal: scan a parcel, capture its depth image, measure dimensions, read the barcode, log the weight — all without human input. Harder in practice than it sounds on paper.
-
-<img src="assets/dws_pipeline.svg" alt="DWS processing pipeline" width="100%"/>
-
-> At one point I tried using an AI-assisted segmentation approach to separate the parcel from the conveyor surface. It helped with messy point clouds but added latency — so I ended up using a hybrid: geometry-first with a learned fallback. Not elegant, but it works in production.
-
-`ROS2` `RealSense D455` `Point Clouds` `FastAPI` `SQLite` `WebSocket HMI` `Python`
-
----
+<br/>
 
 ## Projects
 
-### Team Vyadh — Mars Rover Manipulator
+| | | |
+|---|---|---|
+| **[Team Vyadh — Mars Rover Manipulator](https://github.com/ashmitsingh7/Team-Vyadh-Robotic-Arm)** | 5-DOF robotic arm for the International Rover Challenge. Owned embedded control — encoder feedback, closed-loop PID, power distribution — contributing to a 17th-place international finish (IRC 2026). | `C++` `ESP32` `Encoder feedback` `PID` |
+| **[Gesture-Controlled Robotic Arm](https://github.com/ashmitsingh7/robotic-arm-vision-control)** | Full perception-to-actuation chain: webcam → MediaPipe hand pose → gesture classification → TCP → ESP32 → servos. Built to understand where latency actually accumulates across a real-time control pipeline. | `Python` `OpenCV` `MediaPipe` `ESP32` |
+| **[PID Hardware Accelerator](https://github.com/ashmitsingh7/PID_Hardware_Accelerator)** | RTL implementation of a PID controller in Verilog — fixed-point arithmetic, pipelined stages — exploring whether hardware can genuinely beat software on latency. Work in progress. | `Verilog` `FPGA` `RTL` `ModelSim` |
 
-`C++` `Embedded` `Competition`
+**Also exploring:** a small RISC-V / ReRAM in-memory-compute SoC project on the hardware side — early stage, more on that as it matures.
 
-5-DOF robotic arm built for the International Rover Challenge. I worked on embedded control — ESP32 firmware, encoder feedback loops, the differential wrist mechanism that took the most time to get stable. Learned more from what broke during competition than from what worked.
+<br/>
 
-`ESP32` `Encoder feedback` `Differential wrist` `C++`
+## Tech Stack
 
-→ [github.com/ashmitsingh7/Team-Vyadh-Robotic-Arm](https://github.com/ashmitsingh7/Team-Vyadh-Robotic-Arm)
+**Languages**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white)
+![Verilog](https://img.shields.io/badge/Verilog-black?style=flat-square)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 
----
+**Robotics & Control**
+![ROS2](https://img.shields.io/badge/ROS2-22314E?style=flat-square&logo=ros&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
 
-### Gesture Controlled Robotic Arm
+**Computer Vision**
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![Intel RealSense](https://img.shields.io/badge/Intel%20RealSense-0071C5?style=flat-square&logo=intel&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=google&logoColor=white)
 
-`Python` `CV` `Embedded`
+**Backend & Tools**
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-Camera input → MediaPipe hand pose → gesture recognition → TCP → ESP32 → servos. Built this to understand the full perception-to-actuation chain. The latency budget was the interesting part — every layer adds delay and it adds up.
+**Hardware / VLSI** *(secondary focus)*
+![Verilog](https://img.shields.io/badge/RTL%20Design-black?style=flat-square)
+![Quartus](https://img.shields.io/badge/Quartus-6699CC?style=flat-square)
+![Altium](https://img.shields.io/badge/Altium%20Designer-A5CD50?style=flat-square)
 
-```
-Camera → MediaPipe → Gesture classification → TCP → ESP32 → Servo control
-```
+<br/>
 
-`OpenCV` `MediaPipe` `ESP32` `TCP/IP`
+## GitHub Stats
 
-→ [github.com/ashmitsingh7/robotic-arm-vision-control](https://github.com/ashmitsingh7/robotic-arm-vision-control)
+<div align="center">
 
----
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=ashmitsingh7&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashmitsingh7&layout=compact&theme=tokyonight&hide_border=true" />
 
-### PID Hardware Accelerator
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ashmitsingh7&theme=tokyonight&hide_border=true" />
 
-`Verilog` `FPGA` `RTL`
+</div>
 
-Can you implement a PID controller in hardware and make it genuinely faster than software? Exploring that question in Verilog. Current focus: fixed-point arithmetic, pipeline stages, and getting ModelSim to stop lying to me about timing.
-
-*Still a work in progress — FPGA implementations tend to surface edge cases you didn't think of.*
-
-`Verilog` `SystemVerilog` `Quartus` `ModelSim` `RTL`
-
-→ [github.com/ashmitsingh7/PID_Hardware_Accelerator](https://github.com/ashmitsingh7/PID_Hardware_Accelerator)
-
----
-
-## Engineering Domains
-
-| Robotics | Embedded | Vision | Digital HW |
-|---|---|---|---|
-| ROS2 | ESP32 | OpenCV | Verilog |
-| Kinematics | STM32 | RealSense | FPGA design |
-| Manipulators | UART / SPI / I²C | Point clouds | RTL |
-| Motion control | Encoder feedback | MediaPipe | Quartus |
-
----
-
-## Where I've Been · Where I'm Going
-
-```text
-2025
-✓ Embedded Robotics
-✓ Competition Robotics (Team Vyadh)
-✓ Control Systems
-
-2026
-✓ Computer Vision
-✓ ROS 2
-✓ Industrial Automation (Delhivery DWS)
-✓ FPGA Accelerators
-✓ RISC-V Exploration
-
-Next
-○ Exploring Robotics Research
-○ VLSI & Hardware Acceleration
-○ Smart Materials & Actuators
-```
-
----
+<br/>
 
 ## How I Think About Building
 
 ```
-01  Build systems, not features.
-    The interesting problems live at the interfaces between layers.
-
+01  Build systems, not features — the interesting problems live at the interfaces.
 02  Hardware failure teaches you things software testing never will.
-
 03  Understand it before you automate it.
-
 04  Documentation is part of the build, not an afterthought.
-
-05  There's a lot I don't know yet. That's the point.
 ```
 
----
+<br/>
 
 <div align="center">
 
