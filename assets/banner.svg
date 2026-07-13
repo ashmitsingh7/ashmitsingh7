@@ -1,30 +1,53 @@
-<svg width="100%" viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" role="img">
-  <title>Ashmit Singh — robotics engineer banner</title>
-  <desc>Terminal-style hero banner</desc>
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0d10"/>
+      <stop offset="100%" stop-color="#14171c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2b6cff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#2b6cff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#2b6cff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
 
-  <rect x="0" y="0" width="680" height="200" rx="10" fill="#0D1117"/>
+  <rect width="1200" height="300" fill="url(#bg)"/>
 
-  <text x="32" y="38" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#3FB950">ashmit@robotics:~$</text>
-  <text x="196" y="38" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#8B949E"> whoami</text>
-  <rect x="196" y="26" width="7" height="14" rx="1" fill="#3FB950" opacity="0.8"/>
+  <!-- faint circuit-grid texture -->
+  <g stroke="#ffffff" stroke-opacity="0.035" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="150" y1="0" x2="150" y2="300"/>
+    <line x1="1050" y1="0" x2="1050" y2="300"/>
+  </g>
+  <g fill="#2b6cff" fill-opacity="0.5">
+    <circle cx="150" cy="60" r="2.5"/>
+    <circle cx="1050" cy="60" r="2.5"/>
+    <circle cx="150" cy="240" r="2.5"/>
+    <circle cx="1050" cy="240" r="2.5"/>
+  </g>
 
-  <text x="32" y="72" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="20" font-weight="500" fill="#E6EDF3">Ashmit Singh</text>
-  <text x="32" y="96" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="12" fill="#8B949E">Electronics Engineering · VIT Vellore</text>
+  <!-- headline -->
+  <text x="600" y="140" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="56" font-weight="700" letter-spacing="-1.5" fill="#f5f6f7">
+    Ashmit Singh
+  </text>
 
-  <line x1="32" y1="112" x2="648" y2="112" stroke="#21262D" stroke-width="0.5"/>
+  <!-- subtitle -->
+  <text x="600" y="178" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif"
+        font-size="20" font-weight="400" letter-spacing="0.2" fill="#9aa1ab">
+    Robotics &amp; Embedded Systems Engineer
+  </text>
 
-  <text x="32" y="136" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="13" fill="#E6EDF3">Building robots and embedded systems —</text>
-  <text x="32" y="156" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="13" fill="#8B949E">still figuring out how deep the rabbit hole goes.</text>
+  <!-- accent divider -->
+  <rect x="500" y="204" width="200" height="1.5" fill="url(#accent)"/>
 
-  <rect x="32" y="172" width="82" height="18" rx="3" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
-  <text x="73" y="184" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="10" fill="#58A6FF" text-anchor="middle">robotics</text>
-
-  <rect x="122" y="172" width="118" height="18" rx="3" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
-  <text x="181" y="184" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="10" fill="#58A6FF" text-anchor="middle">embedded systems</text>
-
-  <rect x="248" y="172" width="120" height="18" rx="3" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
-  <text x="308" y="184" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="10" fill="#58A6FF" text-anchor="middle">computer vision</text>
-
-  <rect x="376" y="172" width="126" height="18" rx="3" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
-  <text x="439" y="184" font-family="'JetBrains Mono', 'Fira Mono', monospace" font-size="10" fill="#58A6FF" text-anchor="middle">digital hardware</text>
+  <!-- footer line -->
+  <text x="600" y="234" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif"
+        font-size="14" font-weight="500" letter-spacing="1.6" fill="#5c6470">
+    VIT VELLORE  ·  ELECTRONICS ENGINEERING (VLSI)  ·  ROS2 · CV · EMBEDDED
+  </text>
 </svg>
