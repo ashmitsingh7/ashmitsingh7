@@ -2,7 +2,7 @@
 
 # Ashmit Singh
 
-**Robotics & Embedded Systems Engineer**
+**Robotics & Systems Engineer**
 
 `VIT Vellore` · `Electronics Engineering (VLSI)` · `ROS2` · `Computer Vision`
 
@@ -12,7 +12,7 @@
 
 I build complete systems, not isolated scripts — sensors to firmware to the software layer that ties it together. Currently pulling that same rigor into VLSI/RTL and RISC-V.
 
-Senior Core Member, Robotic Arm Domain — **Team Vyadh**, VIT's Martian Rover team.
+Robotic Arm Engineer — **Team Vyadh**, VIT's Martian Rover team.
 
 <br>
 
