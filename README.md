@@ -1,4 +1,8 @@
-<h1 align="center">Ashmit Singh</h1>
+<p align="center">
+  <a href="https://github.com/ashmitsingh7?tab=repositories">
+    <img src="./arm.svg" alt="Animated robotic arm with turntable, shoulder, elbow, wrist and gripper picking up a block" width="100%">
+  </a>
+</p>
 
 <p align="center">
   <strong>Robotic arms • embedded control • VLSI design &amp; test</strong><br>
@@ -14,16 +18,11 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="https://github.com/ashmitsingh7?tab=repositories">
-    <img src="./arm.svg" alt="Animated robotic arm with turntable, shoulder, elbow, wrist and gripper picking up a block" width="100%">
-  </a>
-</p>
 
 <p align="center">
   <a href="https://linkedin.com/in/ashmitsingh7">LinkedIn</a>
   &nbsp;·&nbsp;
-  <a href="mailto:YOUR_EMAIL_HERE">Email</a>
+  <a href="mailto:ashmitsingh719@gmail.com">Email</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/ashmitsingh7?tab=repositories">Repositories</a>
 </p>
