@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <strong>Robotic arms • embedded control • VLSI design &amp; test</strong><br>
-  <sub>Connecting mechanics, electronics and firmware, from motor drivers to RTL.</sub>
+  <strong>Robotic Arms • Embedded Control • VLSI Design &amp; Test</strong><br>
+  <sub>Connecting Mechanics, Electronics and Firmware, from Motor Drivers to RTL.</sub>
 </p>
 
 <p align="center">
@@ -28,5 +28,5 @@
 </p>
 
 <p align="center">
-  <sub>Open to robotics, embedded and VLSI roles and collaborations.</sub>
+  <sub>Open to Robotics, Embedded and VLSI roles and collaborations.</sub>
 </p>
